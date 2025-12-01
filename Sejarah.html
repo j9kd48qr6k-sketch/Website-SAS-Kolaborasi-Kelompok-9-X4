@@ -1,0 +1,66 @@
+<!doctype html>
+<html lang="id">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Pendidikan Karakter — Perubahan Digital (TikTok)</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="container">
+    <div class="top-actions">
+      <a href="index.html" class="cta secondary">← Kembali</a>
+      <button class="btn-icon cta secondary" id="printBtn" aria-label="Cetak Halaman" title="Cetak Halaman">Cetak</button>
+      <button class="btn-icon cta secondary" id="shareBtn" aria-label="Bagikan Halaman" title="Bagikan Halaman">Bagikan</button>
+    </div>
+    <div class="content-hero">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 48" aria-hidden="true" focusable="false">
+        <rect width="48" height="48" rx="8" fill="#BEEBFF" opacity="0.12"/>
+        <path d="M12 31h24v2H12zM12 21h24v2H12zM12 11h24v2H12z" fill="#BEEBFF"/>
+      </svg>
+      <div>
+        <h1>Perubahan Sosial & Budaya Digital: Dari Era Pra‑TikTok ke Era TikTok</h1>
+        <p class="content-intro">Perkembangan teknologi komunikasi di Indonesia telah mengubah cara kita berinteraksi, berpikir, dan merepresentasikan diri; pergeseran dari media tradisional ke platform seperti TikTok membawa konsekuensi budaya yang perlu disikapi oleh pendidikan karakter.</p>
+      </div>
+    </div>
+    <script>
+      document.getElementById('printBtn')?.addEventListener('click', function(){ window.print() })
+      document.getElementById('shareBtn')?.addEventListener('click', async function(){
+        const url = window.location.href
+        try{ if(navigator.share){ await navigator.share({ title: document.title, url }) } else if(navigator.clipboard){ await navigator.clipboard.writeText(url); alert('Tautan halaman disalin ke clipboard') } else { prompt('Salin tautan halaman berikut:', url) } }catch(e){ console.log('Share failed', e) }
+      })
+    </script>
+
+    <div class="panel panel--accent">
+      <h2>Latar: Dari Media Tradisional ke Platform Video Pendek</h2>
+      <p>Perkembangan teknologi komunikasi di Indonesia sudah melalui beberapa fase penting. Dulu, informasi dan komunikasi lebih banyak melalui televisi, radio, koran, dan interaksi langsung di lingkungan sekitar; internet dan smartphone belum se masif sekarang sehingga penyebaran informasi berlangsung lebih lambat dan terstruktur.</p>
+      <p>Seiring waktu, muncul era internet dan media sosial seperti Facebook, Twitter, Instagram, dan YouTube yang mulai mempercepat akses informasi dan interaksi sosial digital. Namun dari berbagai platform yang ada, masyarakat kini banyak yang memilih TikTok karena format video pendek, konsumsi cepat, dan kemudahan dalam membuat maupun melihat konten, sehingga TikTok menjadi sangat dominan di kalangan remaja dan masyarakat luas.</p>
+
+      <h3><svg class="h3-icon" viewBox="0 0 24 24" aria-hidden="true" width="18" height="18" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M12 2l7 4v5c0 5-3.8 9.6-7 11-3.2-1.4-7-6-7-11V6l7-4z" stroke="#BEEBFF" stroke-width="1" stroke-linecap="round" stroke-linejoin="round"/></svg> Perubahan Pola Konten dan Interaksi</h3>
+      <p>Sebelum adanya TikTok, ruang publik digital cenderung berisi tulisan panjang, diskusi, dan berita — sehingga interaksi berlangsung lebih stabil dan terarah. Ketika TikTok hadir, pola tersebut berubah cepat: konten menjadi sangat visual, singkat, dan mudah viral. Ruang privat dan publik semakin mengabur karena banyak orang membagikan kehidupan pribadi ke publik.</p>
+
+      <h3><svg class="h3-icon" viewBox="0 0 24 24" aria-hidden="true" width="18" height="18" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M9 12l2 2 4-4" stroke="#BEEBFF" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg> Dampak Positif</h3>
+      <p>Perubahan ini juga membawa sisi positif seperti lahirnya profesi kreator konten, endorsement, dan peluang ekonomi digital seperti live selling. TikTok memberikan ruang bagi kreativitas, pembelajaran singkat, dan distribusi cepat ide-ide yang relevan bagi generasi muda.</p>
+
+      <h3><svg class="h3-icon" viewBox="0 0 24 24" aria-hidden="true" width="18" height="18" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M12 21s-8-4.4-8-10a6.8 6.8 0 0 1 13.6 0c0 5.6-5.6 10-5.6 10z" stroke="#FFD6E8" stroke-width="1" stroke-linecap="round" stroke-linejoin="round"/></svg> Tantangan dan Dampak Negatif</h3>
+      <p>Di sisi lain, TikTok juga menghadirkan tantangan berupa misinformasi, tekanan sosial untuk mengikuti tren, FOMO (Fear of Missing Out), serta kecenderungan konsumsi yang cepat namun dangkal. Konten yang mudah viral dapat memengaruhi perilaku remaja tanpa pemahaman mendalam terhadap konteks dan konsekuensi.</p>
+
+      <h3><svg class="h3-icon" viewBox="0 0 24 24" aria-hidden="true" width="18" height="18" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M12 2l7 4v5c0 5-3.8 9.6-7 11-3.2-1.4-7-6-7-11V6l7-4z" stroke="#BEEBFF" stroke-width="1" stroke-linecap="round" stroke-linejoin="round"/></svg> Implikasi untuk Pendidikan Karakter</h3>
+      <p>Secara keseluruhan, perubahan dari era pra-TikTok ke era TikTok menunjukkan transformasi besar dalam pola pikir, perilaku digital, serta dinamika sosial masyarakat Indonesia. Bagi pendidikan karakter, hal ini menuntut penekanan pada literasi digital, pengembangan sikap kritis, dan penanaman tanggung jawab moral agar siswa mampu memilah konten, memelihara integritas pribadi, dan menjaga relasi sosial yang sehat di dunia digital.</p>
+
+      <h3><svg class="h3-icon" viewBox="0 0 24 24" aria-hidden="true" width="18" height="18" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M9 12l2 2 4-4" stroke="#BEEBFF" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg> Panduan Singkat untuk Siswa</h3>
+      <ul class="dot-list">
+        <li><strong>Berpikir Kritis:</strong> Selalu cek konteks konten sebelum meniru atau membagikan.</li>
+        <li><strong>Jaga Batas Privat:</strong> Pertimbangkan apa yang layak dibagikan ke publik.</li>
+        <li><strong>Utamakan Tanggung Jawab:</strong> Pastikan penggunaan media sosial tidak mengganggu tugas sekolah dan kehidupan keluarga.</li>
+        <li><strong>Bangun Keterampilan Digital:</strong> Belajar memeriksa sumber informasi dan mengenali misinformasi.</li>
+        <li><strong>Gunakan untuk Kebaikan:</strong> Manfaatkan platform untuk berbagi hal positif dan edukatif.</li>
+      </ul>
+
+      <div class="callout" role="note" aria-label="Ringkasan Penting">
+        <p>Transformasi dari era pra-TikTok ke TikTok membawa peluang sekaligus risiko: pendidikan karakter perlu menyeimbangkan penguatan keterampilan digital dan penanaman nilai agar generasi muda dapat memanfaatkan teknologi secara cerdas dan bertanggung jawab.</p>
+      </div>
+    </div>
+  </div>
+</body>
+</html>

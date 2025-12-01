@@ -1,0 +1,72 @@
+<!doctype html>
+<html lang="id">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Pengantar — Agama</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="container">
+    <div class="top-actions">
+      <a href="index.html" class="cta secondary">← Kembali</a>
+      <button class="btn-icon cta secondary" id="printBtn" aria-label="Cetak Halaman" title="Cetak Halaman">Cetak</button>
+      <button class="btn-icon cta secondary" id="shareBtn" aria-label="Bagikan Halaman" title="Bagikan Halaman">Bagikan</button>
+    </div>
+    <div class="content-hero">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 48" aria-hidden="true" focusable="false">
+        <rect width="48" height="48" rx="8" fill="#BEEBFF" opacity="0.12"/>
+        <path d="M12 31h24v2H12zM12 21h24v2H12zM12 11h24v2H12z" fill="#BEEBFF"/>
+      </svg>
+      <div>
+        <h1>Sikap Kritis dan Tanggung Jawab Siswa Katolik dalam Menggunakan Media Sosial</h1>
+        <p class="content-intro">Pembahasan mengenai bagaimana siswa Katolik dapat menggunakan TikTok secara kritis dan bertanggung jawab, dengan menerapkan nilai discernment, tanggung jawab pribadi, serta panggilan untuk menghadirkan kebaikan di dunia digital.</p>
+      </div>
+    </div>
+      <script>
+        document.getElementById('printBtn')?.addEventListener('click', function(){
+          window.print()
+        })
+        document.getElementById('shareBtn')?.addEventListener('click', async function(){
+          const url = window.location.href
+          try{
+            if(navigator.share){
+              await navigator.share({ title: document.title, url })
+            } else if(navigator.clipboard){
+              await navigator.clipboard.writeText(url)
+              alert('Tautan halaman disalin ke clipboard')
+            } else {
+              prompt('Salin tautan halaman berikut:', url)
+            }
+          }catch(e){
+            console.log('Share failed', e)
+          }
+        })
+      </script>
+
+    <div class="panel panel--accent">
+      <h2>Menyikapi TikTok dan Media Sosial</h2>
+      <p>Penggunaan media sosial seperti TikTok telah menjadi bagian dari kehidupan sehari-hari para siswa. Di satu sisi, platform ini menyediakan hiburan, kreativitas, dan informasi baru, namun di sisi lain, TikTok juga dapat membawa pengaruh negatif seperti pola pikir instan, gaya hidup konsumtif, dan dorongan mengikuti tren tanpa mempertimbangkan nilai moral. Karena itu, siswa perlu memiliki sikap kritis dalam menyaring konten.</p>
+
+      <h3><svg class="h3-icon" viewBox="0 0 24 24" aria-hidden="true" width="18" height="18" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M12 2l7 4v5c0 5-3.8 9.6-7 11-3.2-1.4-7-6-7-11V6l7-4z" stroke="#BEEBFF" stroke-width="1" stroke-linecap="round" stroke-linejoin="round"/></svg> Discernment berdasarkan Iman Katolik</h3>
+      <p>Dalam iman Katolik, sikap kritis ini berkaitan dengan <em>discernment</em>, yaitu kemampuan membedakan mana yang benar berdasarkan nilai Injil. Setiap tindakan digital juga menuntut tanggung jawab pribadi, sehingga siswa perlu berhati-hati sebelum mengunggah sesuatu dan memastikan penggunaan media sosial tidak mengalihkan perhatian dari kewajiban belajar, keluarga, dan pertumbuhan rohani.</p>
+
+      <h3><svg class="h3-icon" viewBox="0 0 24 24" aria-hidden="true" width="18" height="18" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M12 21s-8-4.4-8-10a6.8 6.8 0 0 1 13.6 0c0 5.6-5.6 10-5.6 10z" stroke="#FFD6E8" stroke-width="1" stroke-linecap="round" stroke-linejoin="round"/></svg> Pengaruh Positif dan Tanggung Jawab</h3>
+      <p>Selain itu, media sosial dapat menjadi sarana untuk memperkuat karakter positif. Sesuai ajaran Yesus untuk menjadi terang dunia, siswa diajak memakai TikTok dan platform lain untuk menghadirkan kebaikan melalui konten yang inspiratif, jujur, dan membangun. Nilai seperti kasih, kesederhanaan, dan kerja keras dapat tercermin dalam cara mereka berinteraksi di dunia digital.</p>
+
+      <h3><svg class="h3-icon" viewBox="0 0 24 24" aria-hidden="true" width="18" height="18" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M9 12l2 2 4-4" stroke="#BEEBFF" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg> Panduan Singkat untuk Siswa</h3>
+      <ul class="dot-list">
+        <li><strong>Berfikir Hati-hati:</strong> Selalu pikirkan dampak sebelum mengunggah, apakah konten akan membangun atau menyinggung orang lain.</li>
+        <li><strong>Utamakan Tanggung Jawab:</strong> Pastikan media sosial tidak mengganggu kewajiban belajar, keluarga, dan kehidupan spiritual.</li>
+        <li><strong>Perkuat Karakter Positif:</strong> Gunakan platform untuk menyebarkan kebaikan, berbagi pengalaman yang jujur, dan menginspirasi sesama.</li>
+        <li><strong>Discernment:</strong> Latih kemampuan membedakan konten yang konsisten dengan nilai-nilai iman dan moral.</li>
+        <li><strong>Praktekkan Kasih:</strong> Jadilah teladan: hindari konten yang memicu konflik, dan utamakan interaksi yang membangun.</li>
+      </ul>
+
+      <div class="callout" role="note" aria-label="Ringkasan Penting">
+        <p>Dengan fokus pada kontribusi yang mempersatukan dan tidak memicu konflik, penggunaan media sosial secara kritis dan bertanggung jawab dapat membantu siswa menjaga karakter, menebarkan kebaikan, dan menghadirkan nilai-nilai Kristiani dalam kehidupan digital.</p>
+      </div>
+    </div>
+  </div>
+</body>
+</html>

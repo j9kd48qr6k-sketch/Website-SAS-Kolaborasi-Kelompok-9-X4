@@ -1,0 +1,47 @@
+<!doctype html>
+<html lang="id">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Pengantar — PKWU</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="container">
+    <div class="top-actions">
+      <a href="index.html" class="cta secondary">← Kembali</a>
+      <button class="btn-icon cta secondary" id="printBtn" aria-label="Cetak Halaman" title="Cetak Halaman">Cetak</button>
+      <button class="btn-icon cta secondary" id="shareBtn" aria-label="Bagikan Halaman" title="Bagikan Halaman">Bagikan</button>
+    </div>
+    <div class="content-hero">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 48" aria-hidden="true" focusable="false">
+        <rect width="48" height="48" rx="8" fill="#BEEBFF" opacity="0.12"/>
+        <path d="M12 31h24v2H12zM12 21h24v2H12zM12 11h24v2H12z" fill="#BEEBFF"/>
+      </svg>
+      <div>
+        <h1>Ide Pembuatan Shampoo Alami dari Lerak</h1>
+        <p class="content-intro">Penjelasan dan demonstrasi proses membuat shampoo alami berbahan dasar buah lerak, mulai dari pembersihan bahan, perebusan, penyaringan, hingga pengemasan. Video ini menunjukkan cara memanfaatkan bahan tradisional yang ramah lingkungan serta peluang usaha produk perawatan tubuh herbal.</p>
+      </div>
+    </div>
+    <script>
+      document.getElementById('printBtn')?.addEventListener('click', function(){ window.print() })
+      document.getElementById('shareBtn')?.addEventListener('click', async function(){
+        const url = window.location.href
+        try{ if(navigator.share){ await navigator.share({ title: document.title, url }) } else if(navigator.clipboard){ await navigator.clipboard.writeText(url); alert('Tautan halaman disalin ke clipboard') } else { prompt('Salin tautan halaman berikut:', url) } }catch(e){ console.log('Share failed', e) }
+      })
+    </script>
+
+    <div class="panel panel--accent">
+      <h2>Demonstrasi Video — Bahan, Proses, dan Peluang Usaha</h2>
+      <p>Berikut adalah video demonstrasi pembuatan shampoo alami berbahan lerak. Perhatikan langkah-langkah, teknik pengolahan, dan tips pengemasan untuk usaha rumahan.</p>
+
+      <div class="media-embed">
+        <video controls playsinline preload="metadata" poster="./Images/pkwu%20video%20lerak.mp4" aria-label="Video demonstrasi pembuatan shampoo alami dari lerak">
+          <source src="./Images/pkwu%20video%20lerak.mp4" type="video/mp4">
+        </video>
+        <p class="muted" style="margin-top:0.75rem;font-size:0.95rem">Sumber: Dokumentasi praktik PKWU – Lerak</p>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
