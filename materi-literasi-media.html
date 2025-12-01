@@ -1,0 +1,64 @@
+<!doctype html>
+<html lang="id">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Pengantar — Literasi Media</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="container">
+    <div class="top-actions">
+      <a href="index.html" class="cta secondary">← Kembali</a>
+      <button class="btn-icon cta secondary" id="printBtn" aria-label="Cetak Halaman">Cetak</button>
+      <button class="btn-icon cta secondary" id="shareBtn" aria-label="Bagikan Halaman">Bagikan</button>
+    </div>
+    <script>
+      document.getElementById('printBtn')?.addEventListener('click', function(){ window.print() })
+      document.getElementById('shareBtn')?.addEventListener('click', async function(){
+        const url = window.location.href
+        try{ if(navigator.share){ await navigator.share({ title: document.title, url }) } else if(navigator.clipboard){ await navigator.clipboard.writeText(url); alert('Tautan halaman disalin ke clipboard') } else { prompt('Salin tautan halaman berikut:', url) } }catch(e){ console.log('Share failed', e) }
+      })
+    </script>
+    <div class="content-hero">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 48" aria-hidden="true" focusable="false">
+        <rect width="48" height="48" rx="8" fill="#BEEBFF" opacity="0.12"/>
+        <path d="M12 31h24v2H12zM12 21h24v2H12zM12 11h24v2H12z" fill="#BEEBFF"/>
+      </svg>
+      <div>
+        <h1>Pemanfaatan TikTok Secara Kritis dan Bertanggung Jawab</h1>
+        <p class="content-intro">TikTok sekarang berpengaruh besar dalam kehidupan remaja Indonesia — menyediakan platform ekspresi diri dan kreativitas, namun juga membawa tantangan etika dan tanggung jawab sebagai warga negara digital.</p>
+      </div>
+    </div>
+
+    <div class="panel panel--accent">
+      <h2>TikTok dan Kehidupan Remaja Indonesia</h2>
+      <p>TikTok sekarang berpengaruh besar dalam kehidupan remaja Indonesia. Banyak anak muda yang menggunakan aplikasi ini untuk mengekspresikan diri, mulai dari membagi pendapat, gaya hidup, sampai menunjukkan kreativitas dalam bentuk video pendek. Hal seperti ini searah dengan hak kebebasan berpendapat dan hak untuk mendapatkan informasi yang tercantum dalam UUD 1945 Pasal 28E Ayat (3) dan Pasal 28F.</p>
+
+      <h3><svg class="h3-icon" viewBox="0 0 24 24" aria-hidden="true" width="18" height="18" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M12 2l7 4v5c0 5-3.8 9.6-7 11-3.2-1.4-7-6-7-11V6l7-4z" stroke="#BEEBFF" stroke-width="1" stroke-linecap="round" stroke-linejoin="round"/></svg> Hak & Kebebasan Berekspresi</h3>
+      <p>Penggunaan TikTok dan platform digital sejajar dengan hak kebebasan berpendapat dan hak memperoleh informasi (UUD 1945 Pasal 28E (3) dan Pasal 28F). Remaja dapat memanfaatkan platform ini untuk pembelajaran, inspirasi, dan kreativitas.</p>
+
+      <h3><svg class="h3-icon" viewBox="0 0 24 24" aria-hidden="true" width="18" height="18" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M9 12l2 2 4-4" stroke="#BEEBFF" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg> Batas Kebebasan: Pasal 28J</h3>
+      <p>UUD 1945 Pasal 28J menegaskan bahwa kebebasan seseorang dibatasi oleh hak orang lain dan aturan hukum. Dengan kata lain, kebebasan berekspresi di TikTok tidak boleh merugikan orang lain, merusak reputasi (fitnah), atau melanggar privasi. Oleh karena itu, pengguna harus berhati-hati sebelum mengunggah konten.</p>
+
+      <h3><svg class="h3-icon" viewBox="0 0 24 24" aria-hidden="true" width="18" height="18" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M12 21s-8-4.4-8-10a6.8 6.8 0 0 1 13.6 0c0 5.6-5.6 10-5.6 10z" stroke="#FFD6E8" stroke-width="1" stroke-linecap="round" stroke-linejoin="round"/></svg> Tantangan Negatif (FOMO & Tren)</h3>
+      <p>Banyak konten dapat mendorong FOMO (Fear of Missing Out) dan perilaku meniru tren yang kadang tidak sesuai nilai moral. Remaja perlu berpikir kritis dan menimbang apakah konten itu bermanfaat atau malah mengarahkan pada pola konsumtif.</p>
+
+      <h3><svg class="h3-icon" viewBox="0 0 24 24" aria-hidden="true" width="18" height="18" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M12 2l7 4v5c0 5-3.8 9.6-7 11-3.2-1.4-7-6-7-11V6l7-4z" stroke="#BEEBFF" stroke-width="1" stroke-linecap="round" stroke-linejoin="round"/></svg> Etika Bermedia Sosial & Kepatuhan Hukum</h3>
+      <p>Sebagai warga negara, remaja mesti memeriksa kebenaran informasi, menghormati pendapat & privasi orang lain, dan mematuhi peraturan mengenai transaksi elektronik, perlindungan data pribadi, serta etika komunikasi digital.</p>
+
+      <h3><svg class="h3-icon" viewBox="0 0 24 24" aria-hidden="true" width="18" height="18" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M9 12l2 2 4-4" stroke="#BEEBFF" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg> Panduan Singkat</h3>
+      <ul class="dot-list">
+        <li><strong>Verifikasi Sumber:</strong> Periksa kebenaran sebelum membagikan konten (cek sumber, fakta, dan konteks).</li>
+        <li><strong>Hormati Orang Lain:</strong> Hindari fitnah, pelecehan, atau penyebarluasan informasi pribadi tanpa izin.</li>
+        <li><strong>Konten Positif:</strong> Prioritaskan membagikan informasi edukatif dan inspiratif.</li>
+        <li><strong>Tanggung Jawab:</strong> Pastikan penggunaan media sosial tidak mengganggu pembelajaran dan kewajiban sosial.</li>
+        <li><strong>Patuhi Hukum:</strong> Pahami aturan perundang-undangan terkait komunikasi digital dan data pribadi.</li>
+      </ul>
+
+      <div class="callout" role="note" aria-label="Ringkasan Penting">
+        <p>Dengan menerapkan etika bermedia sosial, berpikir kritis, dan patuh hukum, remaja dapat menjadikan TikTok sebagai medium yang positif untuk kreativitas sekaligus menjaga integritas dan tanggung jawab sebagai warga negara.</p>
+      </div>
+    </div>
+</body>
+</html>
